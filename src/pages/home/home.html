@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{ 'Hellur wurld!' | translate }}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>Welcome to Ionic: {{ helloWorldString }}</h2>
+
+  <p>{{ 'HELLO_WORLD_2' | translate }}</p>
+  
+  <div text-center>
+    <button ion-button round full (click)='changeLanguage("ar")'>
+      Arabic
+    </button>
+    <button ion-button round full (click)='changeLanguage("en")'>
+      English
+    </button>
+    <button ion-button round full (click)='changeLanguage("fr")'>
+      French
+    </button>
+  </div>
+</ion-content>
